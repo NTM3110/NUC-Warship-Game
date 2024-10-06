@@ -1,0 +1,368 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.30.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Nguyen Tuan Minh, RMIT, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.30.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14
+Assembler:       Armasm.exe V6.14
+Linker/Locator:  ArmLink.exe V6.14
+Library Manager: ArmAr.exe V6.14
+Hex Converter:   FromElf.exe V6.14
+CPU DLL:         SARMCM3.DLL V5.30.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.3.0
+Target DLL:      NULink\Nu_Link.dll V3.02
+Dialog DLL:      TARMCM1.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+D:\Documents\RMIT\Sem 2 2022\Embedded\Final Ass\FinalAss-Ex3\FinalAss-Ex3.uvprojx
+Project File Date:  08/26/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(3): warning: In file included from...
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(150): warning: In file included from...
+C:/Keil_v5/Library/CMSIS/Include\core_cm0.h(116): warning: In file included from...
+C:/Keil_v5/Library/CMSIS/Include\core_cmInstr.h(406): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+main.c(3): warning: In file included from...
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(150): warning: In file included from...
+C:/Keil_v5/Library/CMSIS/Include\core_cm0.h(574): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    SCB->SHP[_SHP_IDX(IRQn)] = (SCB->SHP[_SHP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Keil_v5/Library/CMSIS/Include\core_cm0.h(577): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    NVIC->IP[_IP_IDX(IRQn)] = (NVIC->IP[_IP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                       ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Keil_v5/Library/CMSIS/Include\core_cm0.h(608): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+main.c(3): warning: In file included from...
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(11321): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13605): warning: non-portable path to file '"sys.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "SYS.h"
+         ^~~~~~~
+         "sys.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13606): warning: non-portable path to file '"adc.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "ADC.h"
+         ^~~~~~~
+         "adc.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13607): warning: non-portable path to file '"fmc.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "FMC.h"
+         ^~~~~~~
+         "fmc.h"
+main.c(3): warning: In file included from...
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13607): warning: In file included from...
+C:/Keil_v5/Library/StdDriver/Include\FMC.h(314): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    FMC->ISPADR = (u8index << 2);      /* Set UID Address. It must be word alignment. */
+                ~  ~~~~~~~~^~~~
+main.c(3): warning: In file included from...
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13608): warning: non-portable path to file '"gpio.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "GPIO.h"
+         ^~~~~~~~
+         "gpio.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13609): warning: non-portable path to file '"i2c.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "I2C.h"
+         ^~~~~~~
+         "i2c.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13610): warning: non-portable path to file '"pwm.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "PWM.h"
+         ^~~~~~~
+         "pwm.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13611): warning: non-portable path to file '"spi.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "SPI.h"
+         ^~~~~~~
+         "spi.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13612): warning: non-portable path to file '"crc.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "CRC.h"
+         ^~~~~~~
+         "crc.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13613): warning: non-portable path to file '"timer.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "TIMER.h"
+         ^~~~~~~~~
+         "timer.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13614): warning: non-portable path to file '"wdt.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "WDT.h"
+         ^~~~~~~
+         "wdt.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13615): warning: non-portable path to file '"wwdt.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "WWDT.h"
+         ^~~~~~~~
+         "wwdt.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13616): warning: non-portable path to file '"rtc.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "RTC.h"
+         ^~~~~~~
+         "rtc.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13617): warning: non-portable path to file '"uart.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "UART.h"
+         ^~~~~~~~
+         "uart.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13618): warning: non-portable path to file '"i2s.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "I2S.h"
+         ^~~~~~~
+         "i2s.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13619): warning: non-portable path to file '"can.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "CAN.h"
+         ^~~~~~~
+         "can.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13620): warning: non-portable path to file '"usbd.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "USBD.h"
+         ^~~~~~~~
+         "usbd.h"
+main.c(3): warning: In file included from...
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13620): warning: In file included from...
+C:/Keil_v5/Library/StdDriver/Include\USBD.h(638): warning: variable 'u32CfgAddr' may be uninitialized when used here [-Wconditional-uninitialized]
+    return ((*((__IO uint32_t *)(u32CfgAddr))) & USBD_CFGP_SSTALL);
+                                 ^~~~~~~~~~
+C:/Keil_v5/Library/StdDriver/Include\USBD.h(622): note: initialize the variable 'u32CfgAddr' to silence this warning
+    uint32_t u32CfgAddr;
+                       ^
+                        = 0
+main.c(3): warning: In file included from...
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13621): warning: non-portable path to file '"pdma.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "PDMA.h"
+         ^~~~~~~~
+         "pdma.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13622): warning: non-portable path to file '"sc.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "SC.h"
+         ^~~~~~
+         "sc.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13623): warning: non-portable path to file '"ps2.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "PS2.h"
+         ^~~~~~~
+         "ps2.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13624): warning: non-portable path to file '"clk.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "CLK.h"
+         ^~~~~~~
+         "clk.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13625): warning: non-portable path to file '"acmp.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "ACMP.h"
+         ^~~~~~~~
+         "acmp.h"
+main.c(4): warning: non-portable path to file '"MCU_Init.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "MCU_init.h"
+         ^~~~~~~~~~~~
+         "MCU_Init.h"
+main.c(11): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b10000010,  //Number 0          // ---a----
+        ^
+main.c(12): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b11101110,  //Number 1          // |      |
+        ^
+main.c(13): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b00000111,  //Number 2          // f      b
+        ^
+main.c(14): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b01000110,  //Number 3          // |      |
+        ^
+main.c(15): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b01101010,  //Number 4          // ---g----
+        ^
+main.c(16): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b01010010,  //Number 5          // |      |
+        ^
+main.c(17): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b00010010,  //Number 6          // e      c
+        ^
+main.c(18): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b11100110,  //Number 7          // |      |
+        ^
+main.c(19): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b00000010,  //Number 8          // ---d----
+        ^
+main.c(20): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b01000010,   //Number 9
+        ^
+main.c(21): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b11111111   //Blank LED
+        ^
+main.c(9): warning: no previous extern declaration for non-static variable 'pattern' [-Wmissing-variable-declarations]
+int pattern[] = {
+    ^
+main.c(9): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int pattern[] = {
+^
+main.c(23): error: unknown type name 'bool'
+bool game_started = false;
+^
+main.c(23): error: use of undeclared identifier 'false'; did you mean 'fclose'?
+bool game_started = false;
+                    ^~~~~
+                    fclose
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h(265): note: 'fclose' declared here
+extern _ARMABI int fclose(FILE * /*stream*/) __attribute__((__nonnull__(1)));
+                   ^
+main.c(24): error: unknown type name 'bool'
+bool game_over = false;
+^
+main.c(24): error: use of undeclared identifier 'false'; did you mean 'fclose'?
+bool game_over = false;
+                 ^~~~~
+                 fclose
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h(265): note: 'fclose' declared here
+extern _ARMABI int fclose(FILE * /*stream*/) __attribute__((__nonnull__(1)));
+                   ^
+main.c(25): error: unknown type name 'bool'
+bool changing_x = true;
+^
+main.c(25): error: use of undeclared identifier 'true'
+bool changing_x = true;
+                  ^
+main.c(26): error: unknown type name 'bool'
+bool changing_y = false;
+^
+main.c(26): error: use of undeclared identifier 'false'; did you mean 'fclose'?
+bool changing_y = false;
+                  ^~~~~
+                  fclose
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h(265): note: 'fclose' declared here
+extern _ARMABI int fclose(FILE * /*stream*/) __attribute__((__nonnull__(1)));
+                   ^
+main.c(27): warning: no previous extern declaration for non-static variable 'x' [-Wmissing-variable-declarations]
+int x = -1; // 0-based
+    ^
+main.c(27): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int x = -1; // 0-based
+^
+main.c(28): warning: no previous extern declaration for non-static variable 'y' [-Wmissing-variable-declarations]
+int y = -1; // 0-based. TODO: Check if this is still needed.
+    ^
+main.c(28): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int y = -1; // 0-based. TODO: Check if this is still needed.
+^
+main.c(29): warning: no previous extern declaration for non-static variable 'num_shot' [-Wmissing-variable-declarations]
+int num_shot = 0;
+    ^
+main.c(29): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int num_shot = 0;
+^
+main.c(31): warning: no previous extern declaration for non-static variable 'N' [-Wmissing-variable-declarations]
+int N = 9;
+    ^
+main.c(31): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int N = 9;
+^
+main.c(32): warning: no previous extern declaration for non-static variable 'ships_sunk' [-Wmissing-variable-declarations]
+int ships_sunk = 0;
+    ^
+main.c(32): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int ships_sunk = 0;
+^
+main.c(33): error: array has incomplete element type 'int []'
+int map[][] = {
+       ^
+main.c(43): error: unknown type name 'bool'
+bool hit_map[][] = {
+^
+main.c(43): error: array has incomplete element type 'int []'
+bool hit_map[][] = {
+            ^
+main.c(52): error: expected ';' after top level declarator
+}
+ ^
+ ;
+main.c(53): error: array has incomplete element type 'int []'
+int shot_history[][] = {
+                ^
+main.c(116): warning: no previous prototype for function 'show_welcome_screen' [-Wmissing-prototypes]
+void show_welcome_screen() {
+     ^
+main.c(116): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void show_welcome_screen() {
+^
+static 
+main.c(127): error: expected expression
+        map = {
+              ^
+main.c(125): warning: no previous prototype for function 'load_map' [-Wmissing-prototypes]
+void load_map() {
+     ^
+main.c(125): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void load_map() {
+^
+static 
+main.c(161): error: use of undeclared identifier 'true'
+                game_over = true;
+                            ^
+main.c(143): warning: no previous prototype for function 'check_game_over' [-Wmissing-prototypes]
+void check_game_over() {
+     ^
+main.c(143): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void check_game_over() {
+^
+static 
+main.c(171): warning: implicit declaration of function 'turn_on_digit' is invalid in C99 [-Wimplicit-function-declaration]
+        turn_on_digit(3);
+        ^
+main.c(172): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        PE->DOUT = pattern[dozens];
+                 ~ ^~~~~~~~~~~~~~~
+main.c(175): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        PE->DOUT = pattern[units];
+                 ~ ^~~~~~~~~~~~~~
+main.c(168): warning: no previous prototype for function 'displayShotCount' [-Wmissing-prototypes]
+void displayShotCount(int dozens, int units){
+     ^
+main.c(168): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void displayShotCount(int dozens, int units){
+^
+static 
+main.c(180): warning: declaration shadows a variable in the global scope [-Wshadow]
+void shoot(int x, int y) {
+               ^
+main.c(27): note: previous declaration is here
+int x = -1; // 0-based
+    ^
+main.c(180): warning: declaration shadows a variable in the global scope [-Wshadow]
+void shoot(int x, int y) {
+                      ^
+main.c(28): note: previous declaration is here
+int y = -1; // 0-based. TODO: Check if this is still needed.
+    ^
+main.c(197): error: use of undeclared identifier 'bool'
+        bool hit = false;
+        ^
+main.c(207): warning: implicitly declaring library function 'abs' with type 'int (int)' [-Wimplicit-function-declaration]
+                        if ((abs(i - x) + abs(j - y)) <= 1) {
+                             ^
+main.c(207): note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+main.c(211): error: use of undeclared identifier 'hit'
+                                hit = true;
+                                ^
+main.c(211): error: use of undeclared identifier 'true'
+                                hit = true;
+                                      ^
+main.c(218): error: use of undeclared identifier 'hit'
+        if (hit) {
+            ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+56 warnings and 20 errors generated.
+compiling main.c...
+".\Objects\Tutorial7_SPI_P1.axf" - 19 Error(s), 56 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Nuvoton
+                https://github.com/OpenNuvoton/cmsis-packs/raw/master/Nuvoton_DFP/Nuvoton.NuMicro_DFP.1.3.16.pack
+                Nuvoton.NuMicro_DFP.1.3.16
+                Nuvoton ARM Cortex-M NuMicro Family Device Support
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\mdmt3\AppData\Local\Arm\Packs\Nuvoton\NuMicro_DFP\1.3.16\Device\NUC100\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
